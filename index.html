@@ -110,10 +110,6 @@
             window.addEventListener( 'resize', throttle(function(ev) {
                 // recalculate window width/height
                 win = { width: window.innerWidth, height: window.innerHeight };
-                // reset body height if stack is opened
-                if( classie.has(bodyEl, 'view-full') ) { // stack is opened
-                    bodyEl.style.height = stacks[flkty.selectedIndex].offsetHeight + 'px';
-                }
             }, 50));
         }
 
