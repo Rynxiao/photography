@@ -20,7 +20,7 @@ var xVal = -1/(win.height/2)*ev.clientY + 1,
 
 win.height / 2 - ev.clientY
 
-———————————————————————————
+---------------------------
 
     win.height / 2
 
