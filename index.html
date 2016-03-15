@@ -52,8 +52,6 @@
             opacity: 0.7;
             -webkit-transition: -webkit-transform 0.4s, opacity 0s 0.5s;
             transition: transform 0.4s, opacity 0s 0.5s;
-
-            transform: perspective(1000px) translate3d(7.73504px, -4.45026px, -22.2513px) rotate3d(0.445026, 0.773504, 0, 2deg);
         }
     </style>
 </head>
@@ -88,10 +86,6 @@
             };
         }
 
-        function init() {
-            initEvents();
-        }
-
         function initEvents() {
             window.addEventListener('mousemove', throttle(function(ev) {
                 var xVal = -1/(win.height/2)*ev.clientY + 1,
@@ -113,7 +107,7 @@
             }, 50));
         }
 
-        init();
+        initEvents();
     </script>
 </body>
 </html>
