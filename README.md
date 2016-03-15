@@ -18,11 +18,7 @@ var xVal = -1/(win.height/2)*ev.clientY + 1,
 
 `xVal = -1/(win.height/2)*ev.clientY + 1`, 控制的是X轴的偏转角度，解析为：
 
-`win.height / 2 - ev.clientY
-
-————————————————————————————
-
-    win.height / 2`
+`( win.height / 2 - ev.clientY ) / ( win.height / 2 )`
 
 表示的是当鼠标在屏幕上方时，则为正值，那么上部就会向里偏，下部就会向外偏，造成画面随着鼠标移动的效果
 
